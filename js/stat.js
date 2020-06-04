@@ -44,8 +44,8 @@ window.renderStatistics = function (ctx, players, times) {
     ctx.fillText(Math.floor(times[i]), CLOUD_X + GAP + (GAP + COLUMN_WIDTH) * i, CLOUD_Y + CLOUD_HEIGHT - FONT_GAP * 3 - times[i] * COLUMN_HEIGHT_MAX / maxTime);
     if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
-  	} else {
-  	  ctx.fillStyle = 'hsl(240, ' + getRandomInt(1, 100) + '%, 50%)';
+    } else {
+      ctx.fillStyle = 'hsl(240, ' + getRandomInt(1, 100) + '%, 50%)';
     }
     ctx.fillRect(CLOUD_X + GAP + (GAP + COLUMN_WIDTH) * i, CLOUD_Y + CLOUD_HEIGHT - FONT_GAP * 2 - times[i] * COLUMN_HEIGHT_MAX / maxTime, COLUMN_WIDTH, times[i] * COLUMN_HEIGHT_MAX / maxTime);
     ctx.fillStyle = 'rgb(0, 0, 0)';
